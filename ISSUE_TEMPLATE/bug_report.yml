@@ -1,0 +1,54 @@
+name: Bug Report
+description: Something isn't working the way it should.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: What's wrong
+      description: A clear description of the bug. What did you expect to happen instead?
+      placeholder: |
+        When I do X, Y happens instead of Z.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Exact steps, in order, so someone else can hit the same bug.
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots
+      description: >
+        Drag and drop image files here, or paste an image directly (Ctrl+V) - GitHub uploads it
+        automatically and embeds it in this field. A picture of the actual error/behavior is the
+        single most useful thing you can attach to a bug report.
+      placeholder: (drag/paste screenshots here)
+    validations:
+      required: false
+
+  - type: input
+    id: where
+    attributes:
+      label: Where (module / page / URL)
+      placeholder: e.g. Work Management > Projects list, hub.m5x2.com/m5x2/work-management/projects
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Anything else worth knowing - when it started, whether it's consistent, who else hit it.
+    validations:
+      required: false
