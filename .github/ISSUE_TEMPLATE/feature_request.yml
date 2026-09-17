@@ -1,4 +1,4 @@
-name: Feature Request
+name: "✨ Feature Request"
 description: Request a new feature or a change to existing functionality.
 title: "[Feature]: "
 labels: ["feature"]
@@ -6,7 +6,7 @@ body:
   - type: textarea
     id: description
     attributes:
-      label: What do you want, and why
+      label: "📝 What do you want, and why"
       description: Describe the request and the problem it solves.
     validations:
       required: true
@@ -14,7 +14,7 @@ body:
   - type: input
     id: module
     attributes:
-      label: Module
+      label: "🧩 Module"
       description: >
         Which existing module does this belong to (e.g. Personnel, Work Management, Fleet)? If
         it's a brand-new module with no ERD yet, say so - that needs to be scoped before a
@@ -25,7 +25,7 @@ body:
   - type: textarea
     id: wireframe
     attributes:
-      label: Wireframe
+      label: "🖼️ Wireframe"
       description: >
         Required for any new screen or a real change to an existing one. Upload it to
         m5x2-software-docs under architecture/<module>/wireframes/ (named to match this issue,
@@ -38,7 +38,7 @@ body:
   - type: textarea
     id: entities
     attributes:
-      label: Existing entities involved
+      label: "🗂️ Existing entities involved"
       description: >
         Check architecture/erd/particular/<module>.md in m5x2-software-docs for what already
         exists. List which tables/entities this touches, and call out anything new that isn't in
@@ -52,7 +52,7 @@ body:
   - type: textarea
     id: context
     attributes:
-      label: Additional context
+      label: "💬 Additional context"
       description: Anything else worth knowing - who's asking, how urgent, related issues.
     validations:
       required: false
